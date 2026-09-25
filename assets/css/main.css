@@ -42,6 +42,7 @@ p { color: var(--muted); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; min-height: 106px; }
 .brand { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-size: 2.25rem; font-weight: 600; letter-spacing: -.085em; line-height: 1; }
 .brand .icon { width: 35px; height: 35px; }
+.brand-illustration { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
 .brand-dot { color: var(--accent); }
 .main-nav { display: flex; gap: 32px; align-items: center; }
 .main-nav a { text-decoration: none; font-size: .9rem; font-weight: 500; color: var(--muted); padding: 14px 0; }
@@ -213,6 +214,7 @@ p { color: var(--muted); }
   .header-inner { flex-wrap: wrap; gap: 0; padding-top: 22px; padding-bottom: 8px; }
   .brand { font-size: 1.55rem; }
   .brand .icon { width: 30px; height: 30px; }
+  .brand-illustration { width: 38px; height: 38px; }
   .header-cta { order: 1; font-size: .75rem; min-height: 38px; padding: 8px 12px; }
   .main-nav { order: 2; width: 100%; justify-content: space-between; margin-top: 12px; gap: 10px; }
   .main-nav a { font-size: .78rem; padding: 13px 0; }

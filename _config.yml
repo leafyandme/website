@@ -8,8 +8,7 @@ author: Leafy & Me
 support_email: support@leafyandme.com
 repository_url: https://github.com/leafyandme/application
 issues_url: https://github.com/leafyandme/application/issues/new
-# Set the real App Store URL when the app is available. Blank shows Coming soon.
-app_store_url: ""
+app_store_url: "https://apps.apple.com/us/app/leafy-me/id6816234937"
 minimum_ios: "18"
 catalog_count: 560
 markdown: kramdown
