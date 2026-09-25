@@ -1,0 +1,38 @@
+---
+layout: page
+title: Support
+heading: A little help to grow.
+eyebrow: Leafy & Me support
+intro: A question, a small snag, or an idea for Leafy & Me? You’re in the right place.
+permalink: /support/
+description: Get help with Leafy & Me’s reminders, photos, and backups, contact support by email, or report a problem on GitHub.
+---
+<div class="row g-5">
+  <div class="col-lg-7">
+    <h2>Let’s get you growing.</h2>
+    <p class="mb-4">A few answers to the things you might be wondering about.</p>
+    <div class="faq">
+      <details open><summary>How do I add my first plant?</summary><div><p>In Plants, add a plant and choose a type from the catalog, or enter your own. Give it a name, room, and optional photo, then review its suggested care schedules.</p><p>In Settings, pick two preferred care days and enable notifications if you want reminders. Open Care to see overdue and today’s tasks, with an optional preview of what’s coming up.</p></div></details>
+      <details><summary>Why am I not receiving reminders?</summary><div><p>Check that notifications are enabled in Leafy &amp; Me Settings and allowed in iOS Settings. Leafy &amp; Me Settings also shows the next queued reminder. Your device’s Focus and Scheduled Summary settings can affect when alerts appear.</p><p>Tasks on the same day share a summary at their earliest selected reminder time. Once you’ve been notified about a task, it stays in Care without repeatedly alerting you. Record it when finished, or snooze it for a later reminder.</p></div></details>
+      <details><summary>Does a soil check mean I should water?</summary><div><p>No. Suggested intervals are reminders to check, not instructions to water automatically. Look at the plant and soil first. If the soil is still moist, choose <strong>Still moist</strong> to postpone the check. Record <strong>Watered</strong> only when you actually water.</p><p>You can adjust a plant’s intervals and seasonal schedules under Schedules on its detail screen.</p></div></details>
+      <details><summary>Can I use my own plant photos?</summary><div><p>Yes. Tap the photo while editing a plant to select a photo from your library or take one with the camera. Choosing <strong>Remove Photo</strong> restores the bundled reference when one is available.</p><p>Reference photos sometimes show a related species or genus. They are helpful illustrations, not identification guarantees.</p></div></details>
+      <details><summary>How do I back up or move my collection?</summary><div><p>Use <strong>Export Collection</strong> in Settings to save a backup before changing devices. Import that file into Leafy &amp; Me on the other device. You can merge it with an existing collection or replace the collection after confirmation.</p><p>Exports include photos and care history and are not encrypted by Leafy &amp; Me. Store them somewhere private. This local-only release does not automatically sync between devices.</p></div></details>
+      <details><summary>Can I correct a care entry or delete a plant?</summary><div><p>You can undo a care action immediately after recording it. Open a plant’s Care History to correct the date of an entry or remove a mistaken entry.</p><p>To delete a plant, swipe it in Plants and confirm <strong>Delete Plant</strong>. This removes its saved photo, schedules, and history. Exported backups must be deleted separately. See the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a> for retention details.</p></div></details>
+      <details><summary>Does Leafy &amp; Me need an internet connection?</summary><div><p>Your collection, the catalog, reference photos, and care reminders work offline. You only need an internet connection to open external websites such as support, source, and license links.</p></div></details>
+      <details><summary>Which devices can use Leafy &amp; Me?</summary><div><p>Leafy &amp; Me is built for iPhone and iPad running iOS or iPadOS {{ site.minimum_ios }} or later. It follows your device’s light or dark appearance.</p>{% if site.app_store_url == '' %}<p>The App Store release is being prepared. Development builds require signing before installation; see the <a href="{{ site.repository_url }}/blob/develop/docs/INSTALLING.md">installation guide</a>.</p>{% else %}<p><a href="{{ site.app_store_url }}">Find Leafy &amp; Me on the App Store</a>.</p>{% endif %}</div></details>
+    </div>
+  </div>
+  <aside class="col-lg-5">
+    <div class="support-card">
+      <span class="feature-icon">{% include icon.html name='leaf' %}</span>
+      <h2>Let’s work it out.</h2>
+      <p>Report a bug, ask a question, or suggest something you’d love to see. Contact Leafy &amp; Me at <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>.</p>
+      <p>To help us understand, include:</p>
+      <ul><li>Your Leafy &amp; Me version and build</li><li>Your device model and iOS version</li><li>What you tried and what happened</li><li>What you expected to happen</li></ul>
+      <a class="button" href="mailto:{{ site.support_email }}">Email support {% include icon.html name='arrow' %}</a>
+      <a class="text-link mt-3" href="{{ site.issues_url }}">Create a GitHub issue {% include icon.html name='arrow' %}</a>
+      <p class="fine-print">Creating a GitHub issue requires an account. Issues are public: leave out private photos, passwords, and collection backups. <a href="{{ site.repository_url }}/issues">Browse existing issues</a> before creating a new one.</p>
+    </div>
+    <p class="fine-print mt-4">Privacy question? Email <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>. You don’t need to share your collection.</p>
+  </aside>
+</div>

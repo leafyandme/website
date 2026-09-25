@@ -1,0 +1,35 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-5 footer-top">
+      <div class="col-lg-6">
+        <a class="brand footer-brand" href="{{ '/' | relative_url }}">{% include icon.html name='leaf' %}<span>leafy &amp; me.</span></a>
+        <p class="footer-statement">A little care.<br>A lot of growth.</p>
+        <p class="footer-note">For your plants. For your peace of mind.<br>Made with care by Leafy &amp; Me.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h2 class="footer-label">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/' | relative_url }}#features">What Leafy &amp; Me can do</a></li>
+          <li><a href="{{ '/' | relative_url }}#how-it-works">Your first plant</a></li>
+          <li><a href="{{ '/' | relative_url }}#get-leafyandme">Get Leafy &amp; Me</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h2 class="footer-label">Here to help</h2>
+        <ul class="footer-links">
+          <li><a href="{{ '/support/' | relative_url }}">Support &amp; FAQs</a></li>
+          <li><a href="mailto:{{ site.support_email }}">Email support</a></li>
+          <li><a href="{{ site.issues_url }}">Report an issue ↗</a></li>
+          <li><a href="{{ '/privacy/' | relative_url }}">Privacy policy</a></li>
+          <li><a href="{{ '/credits/' | relative_url }}">Photo credits</a></li>
+          <li><a href="{{ site.repository_url }}">Leafy &amp; Me on GitHub ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ 'now' | date: '%Y' }} Leafy &amp; Me. All rights reserved.</span>
+      <span>{% include icon.html name='sun' %} In tune with your device’s appearance.</span>
+    </div>
+  </div>
+</footer>

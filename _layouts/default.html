@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15231d" media="(prefers-color-scheme: dark)">
+  <title>{% if page.title %}{{ page.title | escape }} · Leafy &amp; Me{% else %}Leafy &amp; Me · A little care. A lot of growth.{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | default: site.tagline | escape }} · Leafy &amp; Me">
+  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/app-icon.png' | absolute_url }}">
+  <meta property="og:image:alt" content="Leafy &amp; Me: a green seedling in a cream plant pot">
+  <link rel="icon" href="{{ '/assets/images/app-icon.png' | relative_url }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/app-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/vendor/bootstrap.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include header.html %}
+  <main id="main" tabindex="-1">{{ content }}</main>
+  {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> A happier home for your houseplants</p>
+        <h1>A little care.<br>A lot of <em>growth.</em></h1>
+        <p class="hero-description">Meet Leafy &amp; Me, your plant care companion.<br class="d-none d-xl-block"> Keep your plants happy, your routine simple,<br class="d-none d-xl-block"> and a little more green in your everyday.</p>
+        <div class="hero-actions">
+          <a class="button" href="#get-leafyandme">Meet your new plant companion {% include icon.html name='arrow' %}</a>
+          <a class="text-link" href="#features">Explore the features <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="device-note">{% include icon.html name='phone' %} Made for iPhone &amp; iPad <span>·</span> iOS {{ site.minimum_ios }}+</p>
+      </div>
+      <div class="col-lg-6">
+        <figure class="hero-art">
+          <div class="hero-photo-wrap"><img class="hero-photo" src="{{ '/assets/images/rubber-plant.jpg' | relative_url }}" alt="Deep green leaves unfurling on a rubber plant" width="714" height="951" fetchpriority="high"></div>
+          <span class="photo-label">A little attention goes a long way.</span>
+          <div class="care-note">
+            <span class="care-note-icon">{% include icon.html name='water' %}</span>
+            <div><span class="small-label">A MOMENT FOR YOUR PLANTS</span><strong>Check soil. Take a breath.</strong><span>Your next little act of care.</span></div>
+            <span class="care-note-check">{% include icon.html name='check' %}</span>
+          </div>
+          <figcaption>Ficus elastica <span>·</span> From Leafy &amp; Me’s offline catalog <a href="{{ '/credits/' | relative_url }}">Photo credits ↗</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="promise-strip">
+  <div class="container promise-inner">
+    <span>{% include icon.html name='leaf' %} Room to grow, at your pace</span>
+    <span>{% include icon.html name='shield' %} No ads. No tracking. No account.</span>
+    <span>{% include icon.html name='check' %} Your plants, even offline</span>
+  </div>
+</div>
+<section class="section-space" id="features" aria-labelledby="features-title">
+  <div class="container">
+    <div class="row section-heading align-items-end gy-3">
+      <div class="col-lg-7"><p class="eyebrow">Thoughtfully simple</p><h2 id="features-title">Less to remember.<br>More to <em>enjoy.</em></h2></div>
+      <div class="col-lg-5"><p class="section-description">From your first windowsill friend to a home full of green. Everything you need to build a care routine that feels natural.</p></div>
+    </div>
+    <div class="row g-4 feature-grid">
+      {% for feature in site.data.features %}
+      <div class="col-md-6 col-lg-4"><article class="feature-item"><span class="feature-icon">{% include icon.html name=feature.icon %}</span><h3>{{ feature.title }}</h3><p>{{ feature.text }}</p></article></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="catalog-section" aria-labelledby="catalog-title">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="plant-gallery">
+          <figure class="plant-card plant-card-first"><img src="{{ '/assets/images/monstera.jpg' | relative_url }}" alt="Monstera deliciosa with its distinctive split leaves" width="904" height="1200" loading="lazy"><figcaption><strong>Monstera deliciosa</strong><span>A familiar leafy friend.</span></figcaption></figure>
+          <figure class="plant-card plant-card-second"><img src="{{ '/assets/images/pilea.jpg' | relative_url }}" alt="Round green leaves of Pilea peperomioides" width="1200" height="900" loading="lazy"><figcaption><strong>Pilea peperomioides</strong><span>A little circle of green.</span></figcaption></figure>
+        </div>
+      </div>
+      <div class="col-lg-6 catalog-copy">
+        <p class="eyebrow">Find your kind of green</p>
+        <h2>A whole world of plants.<br>Right at <em>home.</em></h2>
+        <p>Explore {{ site.catalog_count }} catalog entries, with care suggestions to help you get started. Find a match for your light, room temperature, humidity, and preferred care frequency.</p>
+        <ul class="check-list">
+          <li>{% include icon.html name='check' %} Browse the catalog and reference photos offline</li>
+          <li>{% include icon.html name='check' %} Start with suggested care, then make it your own</li>
+          <li>{% include icon.html name='check' %} Add a custom plant type whenever you need to</li>
+        </ul>
+        <p class="fine-print">Care suggestions are starting points. Always check your plant and soil before watering. Some reference photos show a related species or genus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-space" id="how-it-works" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="text-center section-heading"><p class="eyebrow">A small start. A lovely habit.</p><h2 id="steps-title">Make yourself <em>at home.</em></h2></div>
+    <div class="row g-5 steps">
+      <div class="col-md-4"><span class="step-number">01</span><h3>Meet your plant.</h3><p>Pick a plant from the catalog or add your own type. Give it a name, a spot in your home, and a photo.</p></div>
+      <div class="col-md-4"><span class="step-number">02</span><h3>Find your rhythm.</h3><p>Review the suggested schedules, choose your two preferred care days, and turn on reminders if you like.</p></div>
+      <div class="col-md-4"><span class="step-number">03</span><h3>Let good habits grow.</h3><p>Open Care to see what needs attention. Check your plants, record what you did, and enjoy watching them grow.</p></div>
+    </div>
+  </div>
+</section>
+<section class="privacy-section" aria-labelledby="privacy-title">
+  <div class="container"><div class="privacy-panel row g-4 align-items-center">
+    <div class="col-lg-7"><p class="eyebrow">Yours, by nature</p><h2 id="privacy-title">Your plants.<br>Your own little world.</h2><p>Your collection lives on your device. No account to create, no advertising, and no analytics following you around. Just you and your plants.</p><a class="text-link" href="{{ '/privacy/' | relative_url }}">Our approach to privacy {% include icon.html name='arrow' %}</a></div>
+    <div class="col-lg-5 privacy-art" aria-hidden="true">{% include icon.html name='shield' %}<span>Grown with care.<br>Kept with you.</span></div>
+  </div></div>
+</section>
+<section class="get-leafyandme section-space text-center" id="get-leafyandme" aria-labelledby="get-title">
+  <div class="container">
+    <img class="app-icon" src="{{ '/assets/images/app-icon.png' | relative_url }}" width="80" height="80" alt="Leafy &amp; Me app icon" loading="lazy">
+    <p class="eyebrow">Your next chapter is greener</p><h2 id="get-title">Good things take <em>a little care.</em></h2>
+    <p>A calmer plant routine starts with Leafy &amp; Me.</p>
+    {% if site.app_store_url != '' %}
+    <a class="button" href="{{ site.app_store_url }}">Download on the App Store {% include icon.html name='arrow' %}</a>
+    {% else %}
+    <span class="coming-soon">{% include icon.html name='leaf' %} Coming soon to the App Store</span>
+    <p class="availability-note">Getting ready to put down roots.<br>Want to try a development build? <a href="{{ site.repository_url }}/blob/develop/docs/INSTALLING.md">Read the installation guide ↗</a></p>
+    {% endif %}
+    <p class="fine-print">For iPhone and iPad · iOS / iPadOS {{ site.minimum_ios }} or later.<br>The first release keeps your collection on your device; it does not sync between devices.</p>
+  </div>
+</section>

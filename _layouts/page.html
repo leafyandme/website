@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="page-heading">
+  <div class="container">
+    <p class="eyebrow">{{ page.eyebrow | default: 'A little help from Leafy &amp; Me' }}</p>
+    <h1>{{ page.heading | default: page.title }}</h1>
+    <p class="page-intro">{{ page.intro }}</p>
+  </div>
+</section>
+<div class="container page-content">{{ content }}</div>

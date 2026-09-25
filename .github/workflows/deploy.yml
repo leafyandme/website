@@ -1,0 +1,76 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out production source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Set up Ruby and cached gems
+        uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build and validate site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --strict_front_matter
+          python3 scripts/check_site.py
+      - name: Update compiled gh-pages branch
+        env:
+          OUTPUT_BRANCH: gh-pages
+        run: |
+          set -euo pipefail
+          publish_dir="$RUNNER_TEMP/leafyandme-published"
+          remote_ref=$(git ls-remote --heads origin "refs/heads/$OUTPUT_BRANCH")
+          if [ -n "$remote_ref" ]; then
+            git fetch origin "$OUTPUT_BRANCH"
+            git worktree add --detach "$publish_dir" FETCH_HEAD
+          else
+            git worktree add --detach "$publish_dir" HEAD
+            git -C "$publish_dir" checkout --orphan pages-output
+            git -C "$publish_dir" rm -rf .
+          fi
+          rsync -a --delete --exclude='.git' _site/ "$publish_dir/"
+          git -C "$publish_dir" config user.name 'github-actions[bot]'
+          git -C "$publish_dir" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$publish_dir" add -A
+          if ! git -C "$publish_dir" diff --cached --quiet; then
+            git -C "$publish_dir" commit -m "Publish website from $GITHUB_SHA"
+            git -C "$publish_dir" push origin "HEAD:refs/heads/$OUTPUT_BRANCH"
+          fi
+      - name: Upload the same compiled site to Pages
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
