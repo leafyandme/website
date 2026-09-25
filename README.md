@@ -29,12 +29,12 @@ For another domain or subdirectory deployment, change `url` and `baseurl` in `_c
 - `_config.yml`: site URL, GitHub URLs, support email, minimum iOS version, catalog count, and App Store URL.
 - `index.html` and `_data/features.yml`: homepage sections and feature copy.
 - `support.html`: help articles and the direct GitHub new-issue link.
-- `privacy.md`: policy adapted from Leafy & Me’s local-only App Store policy, including email support, optional public GitHub issues, and this website’s data handling.
+- `privacy.md`: policy covering Leafy & Me’s private iCloud sync and exported backups, including email support, optional public GitHub issues, and this website’s data handling.
 - `assets/css/main.css`: visual design and CSS system-appearance media query.
 - `_includes/` and `_layouts/`: shared menu, footer, inline SVG icons, and page shells.
 - `credits.md`: creator attribution and license links for the three reused plant photos.
 
-Leafy & Me’s source currently describes an upcoming local-only App Store release. The website therefore does not claim App Store availability, validated cloud sync, a price, or complete photo coverage. Once released, set `app_store_url` to the real listing URL; the download section and header button update automatically. Review availability and policy copy if the release’s storage behavior changes.
+The website links to the App Store listing configured in `_config.yml` and describes the iCloud-capable app. Private iCloud sync is enabled explicitly in Settings. Export Collection provides separate snapshot backups, including to iCloud Drive; sync itself also propagates deletions. Keep support and privacy wording aligned with the app when storage behavior changes.
 
 The homepage’s care note is an editorial illustration, not an app screenshot. The photos are taken from the app’s licensed offline catalog. Original source files are retained without additional file transformations; CSS crops them and lowers brightness in dark mode. Attribution is in the site’s footer-linked credits page.
 
