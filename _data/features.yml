@@ -14,5 +14,5 @@
   title: A care history for every plant.
   text: See what you did and when. Record care, snooze a check, correct a date, or undo an accidental tap. Still moist? Check again later.
 - icon: backup
-  title: Backups, and iCloud where available.
-  text: Export your collection to Files for a separate backup. If your version offers private iCloud sync in Settings, enable it to sync plants, photos, and care history across devices.
+  title: A backup you can keep.
+  text: Export your plants, photos, and care history to Files. Save a copy to iCloud Drive or another location you choose, and import it when moving to another device.

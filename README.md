@@ -31,7 +31,7 @@ For another domain or subdirectory deployment, change `url` and `baseurl` in `_c
 - `_config.yml`: site URL, public website source, creator, support email, minimum iOS version, catalog count, and App Store URL.
 - `index.html` and `_data/features.yml`: homepage sections and feature copy.
 - `support.html`: help articles and email support, available without repository access or a GitHub account.
-- `privacy.md`: policy covering Leafy & Me’s private iCloud sync and exported backups, email support, and this website’s data handling.
+- `privacy.md`: policy covering Leafy & Me’s local collection storage and exported backups, email support, and this website’s data handling.
 - `assets/css/main.css`: visual design and CSS system-appearance media query.
 - `_includes/` and `_layouts/`: shared menu, footer, inline SVG icons, and page shells.
 - `credits.md`: creator attribution and license links for the three reused plant photos.
@@ -39,7 +39,7 @@ For another domain or subdirectory deployment, change `url` and `baseurl` in `_c
 - `_includes/structured-data.html`: homepage WebSite, Person, and MobileApplication JSON-LD. Keep the free offer, device requirements, and creator consistent with visible copy and the App Store listing. Do not add ratings or reviews without real evidence; Schema.org validity does not guarantee Google software-app rich results.
 - `llms.txt`: optional summary and official content links; it is not required for search indexing.
 
-The website links to the App Store listing configured in `_config.yml`. Private iCloud sync is conditional on a version offering Enable Private iCloud Sync in Settings, and requires explicit opt-in. The repository has both Local and Cloud configurations, but CI compile proof does not establish which version was published or validate production CloudKit provisioning. Do not promise sync availability in every downloaded version without checking the shipped app. Export Collection provides separate snapshot backups, including to iCloud Drive; sync itself also propagates deletions. Keep support and privacy wording aligned with the app when storage behavior changes.
+The website links to the App Store listing configured in `_config.yml`. The owner confirmed on 27 October 2026 that the published app is local-only: it does not automatically sync collections between devices. Export Collection and Import Collection provide manual snapshot backups and transfers, including files saved to iCloud Drive. Saving an export there does not enable automatic collection sync. The application repository’s separate Cloud configuration is not a feature of the published app and must not be promoted on the website. Keep support and privacy wording aligned with the shipped app when storage behavior changes.
 
 The homepage’s care note is an editorial illustration. The separate screenshot gallery uses the actual iPhone Plants, Care, and Catalog images published in the App Store listing, retrieved on 27 October 2026 at 642 × 1389. These are public example collections, not user-provided private photos. Refresh them when the shipped UI changes; do not synthesize app screens. Original plant-photo files are retained alongside resized WebP variants. CSS crops the three standalone photographs and lowers their brightness in dark mode. Attribution and transformation notices are in the footer-linked credits pages.
 

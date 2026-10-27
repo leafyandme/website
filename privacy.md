@@ -3,23 +3,23 @@ layout: page
 title: Privacy policy
 heading: Your privacy with Leafy & Me.
 eyebrow: Leafy & Me privacy policy
-intro: Your plants and your collection, stored on your device. Private iCloud sync is optional where available.
+intro: Your plants and your collection, stored on your device. You choose when and where to export a backup.
 permalink: /privacy/
-description: How Leafy & Me stores your collection, uses private iCloud sync, handles permissions and backups, and protects your privacy.
+description: How Leafy & Me stores your plant collection locally, handles photos, reminders, and exported backups, and protects your privacy.
 ---
 <div class="row g-5">
 <div class="col-lg-9">
 <div class="prose" markdown="1">
 <p class="fine-print">Last updated: 27 October 2026 · iPhone and iPad</p>
-<div class="policy-summary"><p><strong>No separate account. No advertising. No analytics.</strong><br>Your collection is stored on your device. In versions that offer private iCloud sync, enabling it also stores your collection in your Apple Account’s private iCloud storage. You can export a backup to a location you choose.</p></div>
+<div class="policy-summary"><p><strong>No separate account. No advertising. No analytics.</strong><br>Your collection is stored on your device and does not automatically sync between devices. You can export a backup to a location you choose.</p></div>
 
-Leafy & Me is a plant care app. Visit [leafyandme.com](https://leafyandme.com) for information and support. This policy covers Leafy & Me for iPhone and iPad, including private iCloud sync in versions that support it. If Settings does not offer **Enable Private iCloud Sync**, your version stores the collection locally; you can still export and import backups through Files.
+Leafy & Me is a plant care app. Visit [leafyandme.com](https://leafyandme.com) for information and support. This policy covers the published Leafy & Me app for iPhone and iPad. The app stores your collection locally; you can export and import backups through Files.
 
 ## Your collection
 
-Leafy & Me stores your plant names, plant types, room labels, light conditions, photos, care schedules, and history in its private storage on your device. Room labels are text you enter; Leafy & Me does not request your device's geographic location. The app does not send your collection to us or a developer-operated server. When you enable private iCloud sync, Apple synchronizes your collection using your account’s private CloudKit database. This requires an Apple Account and iCloud availability. Your collection remains available on your device offline; syncing changes requires a connection.
+Leafy & Me stores your plant names, plant types, room labels, light conditions, photos, care schedules, and history in its private storage on your device. Room labels are text you enter; Leafy & Me does not request your device's geographic location. The app does not send your collection to us or a developer-operated server and does not automatically sync it through iCloud. Your collection remains available on your device offline.
 
-Private iCloud sync keeps changes, including deletions, up to date across your devices; it is not a separate historical backup. You can export a snapshot to iCloud Drive using Export Collection. Your device’s own backups may also include app data according to your Apple backup settings. Apple handles iCloud services under its [privacy policy](https://www.apple.com/legal/privacy/).
+You can export a snapshot to iCloud Drive or another location in Files using Export Collection. Choosing iCloud Drive stores the exported file there; it does not enable automatic collection sync. Your device’s own backups may also include app data according to your Apple backup settings. Apple handles its services under its [privacy policy](https://www.apple.com/legal/privacy/).
 
 ## Permissions and reminders
 
@@ -29,9 +29,9 @@ Notifications are optional. They are scheduled locally to remind you about care.
 
 ## Retention and deletion
 
-Your collection remains on your device and, when synced, in your private iCloud storage until you delete it. Swipe a plant in the Plants list and confirm Delete Plant to remove its photo, rules, and history. Leafy & Me retains record identifiers and deletion dates to prevent deleted records from reappearing when older data is merged. These markers do not retain the deleted photo, plant name, or care history. With sync enabled, deletions propagate to other devices when they connect.
+Your collection remains on your device until you delete it. Swipe a plant in the Plants list and confirm Delete Plant to remove its photo, rules, and history. Leafy & Me retains record identifiers and deletion dates to prevent deleted records from reappearing when older data is merged. These markers do not retain the deleted photo, plant name, or care history. Deleting a plant on one device does not automatically delete it from another device or from exported backups.
 
-Deleting Leafy & Me removes its local app storage; offloading the app is different and can preserve that storage. Uninstalling the app does not necessarily remove its iCloud data. Manage iCloud storage and device backups through your Apple Account settings. Before enabling iCloud, Leafy & Me also saves a recovery snapshot in its private app storage; this remains separate from later changes to your collection. There is no separate Leafy & Me user account to delete.
+Deleting Leafy & Me removes its local app storage; offloading the app is different and can preserve that storage. Uninstalling the app does not delete exported backup files or necessarily remove device backups managed by Apple. Delete exported copies separately in Files or their chosen destination, and manage device backups through your Apple settings. There is no separate Leafy & Me user account to delete.
 
 ## Backups you export
 
