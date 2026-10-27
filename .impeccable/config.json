@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "assets/css/main.css"
+        ],
+        "createdAt": "2026-10-27T08:18:09.495Z",
+        "reason": "Codex: intentional privacy-summary callout uses the site accent palette; identical rule is present in baseline commit 8a7ffa4 and is preserved during the SEO refinement."
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ '/#website' | absolute_url | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "inLanguage": {{ site.lang | jsonify }},
+      "publisher": { "@id": {{ '/#creator' | absolute_url | jsonify }} }
+    },
+    {
+      "@type": "Person",
+      "@id": {{ '/#creator' | absolute_url | jsonify }},
+      "name": {{ site.author | jsonify }},
+      "url": {{ site.author_url | jsonify }}
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": {{ '/#app' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS {{ site.minimum_ios }}.0 or later; iPadOS {{ site.minimum_ios }}.0 or later",
+      "availableOnDevice": ["iPhone", "iPad"],
+      "image": {{ '/assets/images/app-icon-160.png' | absolute_url | jsonify }},
+      "screenshot": [
+        {{ '/assets/images/app-plants.jpg' | absolute_url | jsonify }},
+        {{ '/assets/images/app-care.jpg' | absolute_url | jsonify }},
+        {{ '/assets/images/app-catalog.jpg' | absolute_url | jsonify }}
+      ],
+      "downloadUrl": {{ site.app_store_url | jsonify }},
+      "installUrl": {{ site.app_store_url | jsonify }},
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": {{ site.app_store_url | jsonify }}
+      },
+      "author": { "@id": {{ '/#creator' | absolute_url | jsonify }} },
+      "publisher": { "@id": {{ '/#creator' | absolute_url | jsonify }} }
+    }
+  ]
+}
+</script>

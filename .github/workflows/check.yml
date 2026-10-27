@@ -24,3 +24,4 @@ jobs:
         run: |
           bundle exec jekyll build --strict_front_matter
           python3 scripts/check_site.py
+          python3 scripts/test_check_site.py

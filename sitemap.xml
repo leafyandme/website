@@ -7,4 +7,5 @@ layout: null
   <url><loc>{{ '/support/' | absolute_url }}</loc></url>
   <url><loc>{{ '/privacy/' | absolute_url }}</loc></url>
   <url><loc>{{ '/credits/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/catalog-sources/' | absolute_url }}</loc></url>
 </urlset>
