@@ -1,19 +1,19 @@
 ---
 layout: page
 title: Privacy policy
-heading: Yours, by nature.
+heading: Your privacy with Leafy & Me.
 eyebrow: Leafy & Me privacy policy
-intro: Your plants, your collection, your private iCloud.
+intro: Your plants and your collection, stored on your device. Private iCloud sync is optional where available.
 permalink: /privacy/
 description: How Leafy & Me stores your collection, uses private iCloud sync, handles permissions and backups, and protects your privacy.
 ---
 <div class="row g-5">
 <div class="col-lg-9">
 <div class="prose" markdown="1">
-<p class="fine-print">Last updated: 25 September 2026 · iPhone and iPad</p>
-<div class="policy-summary"><p><strong>No separate account. No advertising. No analytics.</strong><br>Your collection is stored on your device and, when you enable private iCloud sync, in your Apple Account’s private iCloud storage. You can also export a backup to a location you choose.</p></div>
+<p class="fine-print">Last updated: 27 October 2026 · iPhone and iPad</p>
+<div class="policy-summary"><p><strong>No separate account. No advertising. No analytics.</strong><br>Your collection is stored on your device. In versions that offer private iCloud sync, enabling it also stores your collection in your Apple Account’s private iCloud storage. You can export a backup to a location you choose.</p></div>
 
-Leafy & Me is a plant care app. Visit [leafyandme.com](https://leafyandme.com) for information and support. This policy covers Leafy & Me for iPhone and iPad, including private iCloud sync.
+Leafy & Me is a plant care app. Visit [leafyandme.com](https://leafyandme.com) for information and support. This policy covers Leafy & Me for iPhone and iPad, including private iCloud sync in versions that support it. If Settings does not offer **Enable Private iCloud Sync**, your version stores the collection locally; you can still export and import backups through Files.
 
 ## Your collection
 
@@ -41,17 +41,17 @@ Export Collection creates a JSON file containing your collection and photos. Lea
 
 Leafy & Me includes no advertising, analytics SDKs, tracking, or automatic developer diagnostics. Its plant catalog and reference photos are bundled and work offline.
 
-Opening support, policy, source, or license links opens a website outside Leafy & Me. The receiving site processes that visit under its own privacy practices; Leafy & Me does not send your collection with the link. If you email support, your email address, message, and any attachments are handled by the maintainer and email service providers to respond to your request; they are not automatically collected by the app. If you choose GitHub for support, the information you submit is handled by GitHub. Issues and any attachments are public. Review [GitHub’s privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) before submitting personal information.
+Opening support, policy, source, or license links opens a website outside Leafy & Me. The receiving site processes that visit under its own privacy practices; Leafy & Me does not send your collection with the link. If you email support, your email address, message, and any attachments are handled by the maintainer and email service providers to respond to your request; they are not automatically collected by the app.
 
 ## This website
 
 This website contains no analytics, advertising, tracking scripts, contact forms, or embedded third-party content. Fonts use your device’s system fonts, and styles and images are served from this site. The site does not set cookies or use browser storage.
 
-The hosting provider receives information needed to serve a page, such as your IP address and browser request details, and may retain server logs under its own practices. Following an external link, including GitHub support links, takes you to a separate website governed by that website’s privacy practices.
+The hosting provider receives information needed to serve a page, such as your IP address and browser request details, and may retain server logs under its own practices. Following an external link, including the App Store or GitHub website source, takes you to a separate website governed by that website’s privacy practices.
 
 ## Contact and changes
 
-For privacy questions or help managing your data, contact Leafy & Me at [{{ site.support_email }}](mailto:{{ site.support_email }}). You may also choose to use public GitHub issues. Do not post private photos, collection backups, passwords, or other sensitive information. A GitHub account is required only if you choose to create an issue.
+For privacy questions or help managing your data, contact Leafy & Me at [{{ site.support_email }}](mailto:{{ site.support_email }}). Do not send passwords or other sensitive information that is not needed for your request. You do not need to share your collection to ask a privacy question.
 
 Changes to this policy will appear on this page with an updated date. If a future version changes data handling, its policy and App Store disclosures will be reviewed before release.
 

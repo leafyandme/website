@@ -1,13 +1,13 @@
 title: Leafy & Me
 tagline: A little care. A lot of growth.
-description: A simple plant care companion for iPhone and iPad. Organize your plants, build a care routine, and grow at your own pace.
+description: A free plant care app for iPhone and iPad. Organize houseplants, set care reminders, and browse 560 offline catalog entries. No ads or tracking.
 url: "https://leafyandme.com"
 baseurl: ""
 lang: en
-author: Leafy & Me
+author: Tijme Gommers
+author_url: https://apps.apple.com/us/developer/tijme-gommers/id1459042136
 support_email: support@leafyandme.com
-repository_url: https://github.com/leafyandme/application
-issues_url: https://github.com/leafyandme/application/issues/new
+repository_url: https://github.com/leafyandme/website
 app_store_url: "https://apps.apple.com/us/app/leafy-me/id6816234937"
 minimum_ios: "18"
 catalog_count: 560

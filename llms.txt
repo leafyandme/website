@@ -1,0 +1,21 @@
+---
+layout: null
+---
+# Leafy & Me
+
+> Leafy & Me is a free plant care app for iPhone and iPad, developed by Tijme Gommers. Organize houseplants, set care schedules and optional local reminders, and browse 560 offline catalog entries. Private iCloud sync is optional in versions that offer it in Settings. Requires iOS or iPadOS 18 or later. No ads, tracking, subscriptions, or in-app purchases.
+
+## Official information
+
+- [App and features]({{ '/' | absolute_url }}): Product overview and screenshots from the App Store listing.
+- [Support]({{ '/support/' | absolute_url }}): Care reminders, photos, offline use, iCloud sync, backups, and email support.
+- [Privacy]({{ '/privacy/' | absolute_url }}): Device storage, optional private iCloud sync, permissions, exported backups, and website privacy.
+- [Website photo credits]({{ '/credits/' | absolute_url }}): Creators, licenses, and image transformations.
+- [Catalog sources and credits]({{ '/catalog-sources/' | absolute_url }}): Catalog methodology and reference-photo attribution.
+- [App Store]({{ site.app_store_url }}): Current availability, price, and device compatibility.
+
+## Product qualifications
+
+Catalog photos are references and can show a related species or genus. Leafy & Me does not offer automatic plant identification or diagnosis. Suggested care intervals are starting points: check the plant and soil before watering. Sync requires an internet connection and the same Apple Account on each device. Exported collection backups are unencrypted JSON files; protect them and delete them separately.
+
+Support: {{ site.support_email }}
